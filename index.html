@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-link">
+                <div class="mode">
+                    <i class='light bx bxs-sun' style="color: #363636;"></i>
+                    <i class='dark bx bxs-moon' style='color:#363636' ></i>
+                </div>
+                <div class="username">
+                    <span>Hey, <strong>Ega</strong></span>
+                    <span>Admin</span>
+                </div>
+                <div class="userProfile">
+                    <img src="img/silverwolf.jpg" alt="userProfileImage">
+                </div>
+    
+            </div>
+        </nav>
+        <aside>
+            <div class="sidebar">
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+                <div class="side-link">
+                    <ul>
+                        <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+                        <li><a href="#"><i class='bx bx-user'></i>Costumer</a></li>
+                        <li><a href="#"><i class='bx bx-receipt'></i>Orders</a></li>
+                        <li><a href="#"><i class='bx bxs-analyse'></i>Analytics</a></li>
+                        <li><a href="#"><i class='bx bx-envelope'></i>Messages</a></li>
+                        <li><a href="#"><i class='bx bxs-spreadsheet'></i>Products</a></li>
+                        <li><a href="#"><i class='bx bxs-report'></i>Reports</a></li>
+                        <li><a href="#"><i class='bx bxs-cog'></i>Settings</a></li>
+                        <li><a href="#"><i class='bx bx-plus'></i>Add Products</a></li>
+                        <li class="logout"><a href="#"><i class='bx bx-log-out'></i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="title">
+                <h2>Dashboard</h2>
+            </div>
+            
+            <div class="cards">
+                <div class="card sales">
+                    <div class="left">
+                        <i class='bx bxs-pie-chart-alt-2'></i>
+                        <h3>Total Sales</h3>
+                        <h1>$25,024</h1>
+                    </div>
+                    <div class="progress">
+                        <i class='bx bxs-circle'></i>
+                        <p>81%</p>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+                <div class="card expenses">
+                    <div class="left">
+                        <i class='bx bxs-bar-chart-alt-2'></i>
+                        <h3>Total Expenses</h3>
+                        <h1>$14,160</h1>
+                    </div>
+                    <div class="progress">
+                        <i class='bx bxs-circle'></i>
+                        <p>62%</p>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+                <div class="card income">
+                    <div class="left">
+                        <i class='bx bxs-network-chart'></i>
+                        <h3>Total Income</h3>
+                        <h1>$10,864</h1>
+                    </div>
+                    <div class="progress">
+                        <i class='bx bxs-circle'></i>
+                        <p>44%</p>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

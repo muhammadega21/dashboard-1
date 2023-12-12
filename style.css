@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+/* Navbar */
+nav{
+    width: 100%;
+}
+
+nav .nav-link{
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+nav .nav-link .mode{
+    display: flex;
+    align-self: flex-start;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 2rem;
+    position: relative;
+    top: 20%;
+    cursor: pointer;
+}
+
+nav .nav-link .mode .light{
+    background-color: #8e44d8;
+    padding: 4px 8px;
+    color: white !important;
+    transition: .2s;
+}
+
+nav .nav-link .mode .dark{
+    padding: 4px 8px;
+    transition: .2s;
+}
+
+nav .nav-link .mode .light:hover,
+nav .nav-link .mode .dark:hover{
+    opacity: .8;
+}
+
+nav .nav-link .username{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #323232;
+    text-align: end;
+}
+
+nav .nav-link .username strong{
+    font-weight: 600;
+    color: black;
+}
+
+nav .nav-link .userProfile{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+nav .nav-link .userProfile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+/* Navbar */
+
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    padding: 0px 20px;
+}
+
+.sidebar .logo{
+    text-align: left;
+}
+
+.sidebar .side-link{
+    margin-top: 20px;
+}
+
+.sidebar .side-link ul li{
+    font-size: 14px;
+}
+
+.sidebar .side-link ul li a{
+    color: #323232;
+    display: block;
+    padding: 10px 16px;
+    position: relative;
+    left: 0;
+    transition: .2s;
+}
+
+/* delete this coding */
+
+.sidebar .side-link ul li:first-child{
+    background-color: rgba(102, 51, 153, .1);
+    border-left: 6px solid #8e44d8;
+}
+
+.sidebar .side-link ul li:first-child a{
+    color: #8e44d8;
+}
+
+/* delete this coding */
+
+.sidebar .side-link ul li a:hover{
+    left: 8px;
+}
+
+.sidebar .side-link ul li.active{
+    background-color: rgba(102, 51, 153, .1);
+    border-left: 6px solid #8e44d8;
+}
+
+.sidebar .side-link ul li.active a{
+    color: #8e44d8;
+}
+
+.sidebar .side-link ul li i{
+    margin-right: 5px;
+}
+
+.sidebar .side-link ul .logout{
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+/* Sidebar */
+
+/* content */
+main{
+    display: inline;
+    width: 85%;
+    float: right;
+    color: #323232;
+}
+
+main .content .title{
+    margin-bottom: 1rem;
+}
+
+main .content .title h2{
+    font-size: 22px;
+}
+
+main .content .cards{
+    display: flex;
+}
+
+main .content .card{
+    margin-right: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    padding: 20px 20px 40px 20px;
+    display: flex;
+    transform: scale(1);
+    transition: .2s;
+}
+
+main .content .card:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    transform: scale(1.02);
+}
+
+main .content .card .left i{
+    padding: 10px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+main .content .sales .left i{
+    background-color: #8e44d8;
+}
+main .content .expenses .left i{
+    background-color: rgb(216, 68, 68);
+}
+main .content .income .left i{
+    background-color: rgb(68, 206, 216);
+}
+
+main .content .card .progress{
+    align-self: center;
+    margin-left: 3rem;
+}
+
+main .content .card small{
+    position: absolute;
+    font-size: 12px;
+    bottom: 15px;
+    opacity: .5;
+}
+/* content */
